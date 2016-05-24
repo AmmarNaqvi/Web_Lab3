@@ -1,0 +1,78 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+#bg{
+    position: relative;
+	background-image: url(img/1.png);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	margin-top: 0px;
+	width: 1200px;
+    height: 500px;
+}
+#bg:target{
+    position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	margin-top: 0px;
+	width: 1200px;
+    height: 500px;
+	animation-name: example;
+    animation-duration: 50s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: example;
+    -webkit-animation-duration: 50s;
+	-webkit-animation-iteration-count: infinite;
+}
+#plane{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 400px 500px;
+	z-index: 10;
+}
+#plane:hover{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 100px 500px;
+	z-index: 10;
+}
+@keyframes example {
+	from {background-position: 0px 0px;}
+	to 	 {background-position: -10000px 0px; }
+}
+@-webkit-keyframes example {
+	from {background-position: 0px 0px;}
+	to 	 {background-position: -10000px 0px; }
+}
+
+</style>
+</head>
+<body>
+
+<div align="center">
+	<button type="button"><a href="#bg">Start</a></button>
+</div>
+
+<hr>
+<div id="bg">
+</div>
+
+<div id="plane">
+	<img src="img/2.png" style="width:200px;height:100px;">
+</div>
+<hr>
+</body>
+</html>
